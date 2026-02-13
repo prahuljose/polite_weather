@@ -23,7 +23,7 @@ class WeatherRender extends StatefulWidget {
 class _WeatherRenderState extends State<WeatherRender>
     with SingleTickerProviderStateMixin {
   // Mocked values for now
-  final int _mockedCondition = 600;
+  final int _mockedCondition = 300;
   final String _mockedDayNight = "day";
 
   // Rotation controller for arrow
@@ -297,9 +297,9 @@ class _WeatherRenderState extends State<WeatherRender>
       print(weatherId);
       print(dayNight);
     }
-    final bgColor = getBackgroundColor(weatherId);
-    final textColor = getTextColor(weatherId);
-    final lottieToShow = getLottie(weatherId, dayNight);
+    final bgColor = getBackgroundColor(_mockedCondition);
+    final textColor = getTextColor(_mockedCondition);
+    final lottieToShow = getLottie(_mockedCondition, dayNight);
 
     // Example: Rotate arrow to wind direction (mocked 90° for demo)
     rotateArrow(

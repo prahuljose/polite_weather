@@ -73,7 +73,7 @@ class _WeatherPageState extends State<WeatherPage> with WidgetsBindingObserver {
 
     try {
       final position = await locationService.getCurrentLocation().timeout(
-        const Duration(seconds: 10),
+        const Duration(seconds: 11),
         onTimeout: () async {
           final cached = await LocationCache.get();
           if (cached != null) {
