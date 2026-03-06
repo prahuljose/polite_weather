@@ -327,6 +327,8 @@ class _WeatherRenderState extends State<WeatherRender>
                   fontWeight: FontWeight.w700,
                   color: textColor,
                 ),
+                textAlign: TextAlign.center,
+                softWrap: true,
               ),
               Text(
                 weather.mainCondition ?? 'N/A',
