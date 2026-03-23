@@ -297,9 +297,9 @@ class _WeatherRenderState extends State<WeatherRender>
       print(weatherId);
       print(dayNight);
     }
-    final bgColor = getBackgroundColor(_mockedCondition);
-    final textColor = getTextColor(_mockedCondition);
-    final lottieToShow = getLottie(_mockedCondition, dayNight);
+    final bgColor = getBackgroundColor(weatherId);
+    final textColor = getTextColor(weatherId);
+    final lottieToShow = getLottie(weatherId, dayNight);
 
     // Example: Rotate arrow to wind direction (mocked 90° for demo)
     rotateArrow(
